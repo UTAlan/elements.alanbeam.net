@@ -30,7 +30,7 @@
 									<a href="qi.php">Quantum Index</a>
 									<a href="discarder.php">Card Discarder</a>
 									<a href="code_generator.php">Code Generator</a>
-									<!--<a href="cards.php">Card Database</a>-->
+									<a href="cards.php">Card Database</a>
 								</nav>
 							</header>
 
