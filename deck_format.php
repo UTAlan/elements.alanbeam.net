@@ -18,8 +18,8 @@ while($r = $results->fetch_assoc()) {
 	$html .= "<tr>";
 	$html .= "<td>" . $r['name'] . "</td>";
     $html .= "<td align=\"center\">" . $code_qty[$r["code"]] . "</td>";
-    $html .= "<td align=\"center\"><a class=\"remove_link\" id=\"remove_" . $r["code"] . "\" href=\"#\">-</a></td>";
-    $html .= "<td align=\"center\"><a class=\"add_link\" id=\"add_" . $r["code"] . "\" href=\"#\">+</a></td>";
+    $html .= "<td align=\"center\"><a class=\"remove_link\" id=\"remove_" . $r["code"] . "\" href=\"#\"><img src=\"images/delete.png\" /></a></td>";
+    $html .= "<td align=\"center\"><a class=\"add_link\" id=\"add_" . $r["code"] . "\" href=\"#\"><img src=\"images/add.png\" /></a></td>";
 	$html .= "</tr>";
 }
 
