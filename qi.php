@@ -159,7 +159,7 @@ if(!empty($_GET['deckCode'])) {
   	}
 }
 
-$Page['title'] = 'Quanta Index';
+$Page['title'] = 'Quantum Index';
 include_once('includes/header.php');
 ?>
 

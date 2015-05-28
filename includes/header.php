@@ -27,10 +27,10 @@
 							<header id="header">
 								<h1><a href="/" id="logo">Elements</a></h1>
 								<nav id="nav">
-									<a href="qi.php">Quantum Index</a>
-									<a href="discarder.php">Card Discarder</a>
-									<a href="code_generator.php">Code Generator</a>
-									<a href="cards.php">Card Database</a>
+									<a href="qi.php"<?php if($Page['title'] == 'Quantum Index') { echo ' class="current-page-item"'; } ?>>Quantum Index</a>
+									<a href="discarder.php"<?php if($Page['title'] == 'Card Discarder') { echo ' class="current-page-item"'; } ?>>Card Discarder</a>
+									<a href="code_generator.php"<?php if($Page['title'] == 'Code Generator') { echo ' class="current-page-item"'; } ?>>Code Generator</a>
+									<a href="cards.php"<?php if($Page['title'] == 'Card Database') { echo ' class="current-page-item"'; } ?>>Card Database</a>
 								</nav>
 							</header>
 

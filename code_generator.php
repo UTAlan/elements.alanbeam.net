@@ -61,6 +61,7 @@ $("#add_cards").autocomplete({
 
 ';
 
+$Page['title'] = 'Code Generator';
 include_once('includes/header.php');
 ?>
 
