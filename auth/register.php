@@ -44,7 +44,7 @@ if(!empty($_POST['username'])) {
       $dom = new DOMDocument;
       $dom->loadHTML($html);
       foreach($dom->getElementsByTagName('a') as $link) {
-        if(strpos($link->getAttribute('href'), 'emailuser') !== false) {
+        if(strpos($link->getAttribute('href'), 'emailuser') !== false && $link->textContent != '') {
           $email = $link->textContent;
           break;
         }
@@ -81,7 +81,7 @@ if(!empty($_POST['username'])) {
     }
   }
 
-  //header("Location:index.php?register_success=1");
+  header("Location:index.php?register_success=1");
   die();
 }
 

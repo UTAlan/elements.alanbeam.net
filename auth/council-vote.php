@@ -82,6 +82,7 @@ require_once("includes/header.php");
         <div class="center">
           <h2><?php echo $election['name'] ?></h2>
           <p>Status: <span id="status" class="<?php echo $status_class; ?>"><?php echo $status; ?></span></p>
+	  <p>Click and drag the candidates below into the order you like (most preferred on top).<br />Once the status above says "Saved", your vote has been submitted.<br />You can update the order until the polls close.</p>
         </div>
 
         <div class="admin-wrapper">

@@ -84,10 +84,12 @@ require_once("includes/header.php");
                 <tbody>
                   <?php 
                   foreach($voters as $voter) {
+		    echo '<tr>';
                     echo '<td>' . $voter['username'] . '</td>';
                     foreach($voter['votes'] as $vote) {
                       echo '<td>' . $vote['username'] . '</td>';
                     }
+		    echo '</tr>';
                   }
                   ?>
                 </tbody>
