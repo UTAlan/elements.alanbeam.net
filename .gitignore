@@ -7,3 +7,5 @@ Archive/
 auth/includes/db.php
 
 WoE
+
+auth/cookie.txt

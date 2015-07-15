@@ -35,7 +35,9 @@ if(!empty($_POST['username'])) {
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       $store = curl_exec($ch);
 
-      curl_setopt($ch, CURLOPT_URL, 'http://elementscommunity.org/forum/profile/?user=' . $username);
+      curl_setopt($ch, CURLOPT_URL, 'http://elementscommunity.org/forum/profile/');
+      curl_setopt($ch, CURLOPT_POST, 1);
+      curl_setopt($ch, CURLOPT_POSTFIELDS, 'user='.$username);
       $html = curl_exec($ch);
       curl_close($ch);
 
@@ -79,7 +81,7 @@ if(!empty($_POST['username'])) {
     }
   }
 
-  header("Location:index.php?register_success=1");
+  //header("Location:index.php?register_success=1");
   die();
 }
 
