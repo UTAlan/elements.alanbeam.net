@@ -3,3 +3,6 @@ includes/local_settings.php
 template_archive/
 
 Archive/
+
+auth/includes/db.php
+
