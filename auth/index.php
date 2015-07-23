@@ -13,7 +13,7 @@ require_once("includes/header.php");
                 <h2>Login</h2>
                 <?php if(!empty($_GET['invalid'])) { ?>
                 <div class="row error">
-                  <div class="col-xs-4 col-xs-offset-4">
+                  <div class="col-xs-12">
                     <p class="error">Invalid username or password. Please try again.</p>
                   </div>
                 </div>
